@@ -1,0 +1,29 @@
+package myPack;
+import java.util.*;
+public class ArrayToLinkedHashSet {
+	public static void main(String args[]){
+		ArrayList mylist= new ArrayList();
+		mylist.add("9");
+		mylist.add("2");
+		mylist.add("2");
+		mylist.add("21");
+		mylist.add("22");
+		mylist.add("22");
+		mylist.add("23");
+		mylist.add("24");
+		mylist.add("24");
+		mylist.add("25");
+		mylist.add("26");
+		mylist.add("26");
+		int i= mylist.size();
+		System.out.println(mylist);
+		Set s= new HashSet();
+			for(String j : mylist){
+			if(s.add(j)==true){
+			System.out.print(j);
+			}
+		
+		}
+		
+	}
+}
